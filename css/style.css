@@ -497,12 +497,18 @@ iframe {
 }
 
     /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:0px) and (max-width: 576px) {  
+@media screen and (min-width:0px) and (max-width: 576px) { 
+    .mainIndex {
+        background-image: url(../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
+        background-size: cover;
+        height: 800px;
+        width: 400px;
+    } 
     header {
         position:relative;
     }
     .logo {
-        width: 180px;
+        max-width: 180px;
         height: 60px;
     }
     header nav {
@@ -525,24 +531,24 @@ iframe {
     margin-top: 40px;
 }
 #carouselExampleControls {
-    width: 500px;
+    width: 400px;
 }
 
     img {
-        width: 400px;
+        max-width: 400px;
         height: 300px;
     }
     .quienesSomos {
         font-size: 18px;
-        width: 400px;
+        max-width: 380px;
         display: block;
     }
     aside ul {
         font-size: 20px;
-        width: 400px;
+        max-width: 400px;
     }
     .solicitaPresupuesto {
-        width: 400px;
+        max-width: 400px;
         padding: 2px;
     }
     .serviciosDescripcion {
@@ -553,18 +559,20 @@ iframe {
         width: 360px;
     }
     .servicio {
-        margin-left: -50px;
+        text-align: center;
+        max-width: 400px;
+        display: block;
     }
     
     .serviciosFlex {
         width: 200px;
-        font-size: 16px;
+        font-size: 0%;
         margin-top: -50px;
         margin-left: -20px;
     }
     .trabajosDescripcion {
         font-size: 18px;
-        width: 400px;
+        max-width: 400px;
         }   
     .piePagina .grupo1 {
         display: block;
@@ -575,10 +583,11 @@ iframe {
         height: 0px;
     }
     .piePagina .box {
-        width: 480px;
+        width: 390px;
     }
     .piePagina .grupo1 .box h3 p{
         font-size: 18px;
+        width: 380px;
     }
     .piePagina .box .redSocial {
         margin-top: 20px;
@@ -594,7 +603,7 @@ iframe {
         margin: 20px 10px;
     }
     .contenedor .form {
-        width: 300px;
+        width: 360px;
         padding: 5px 10px;
     }
     .Youtube {
@@ -604,8 +613,14 @@ iframe {
     }
     iframe {
         width: 400px;
-        height: 2800px;
+        height: 280px;
         margin: -10px;
+    }
+    .desaparecerMobile{
+        font-size: 0%;
+    }
+    .desaparecerMobile ol ul h3 {
+        font-size: 0%;
     }
 }
 /*  Medium devices (tablets, 768px and up) */
