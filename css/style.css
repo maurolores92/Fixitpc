@@ -509,7 +509,7 @@ main section article .verde {
     .mainIndex {
         background-image: url(../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
         background-size: cover;
-        height: 680px;
+        height: 700px;
         max-width: 576px;
     } 
     header {
@@ -544,9 +544,7 @@ main section article .verde {
     .quienesSomos {
         max-width: 300px;
         display: block;
-    }
-    .quienesSomos h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
     aside ul {
         font-size: 20px;
@@ -561,7 +559,10 @@ main section article .verde {
         }
         
     .serviciosDescripcion img {
-        width: 300px;
+        width: 290px;
+        height: 230px;
+        padding: 15px 0 15px 0;
+        margin: -15px;
     }
     .servicio {
         text-align: center;
@@ -630,9 +631,8 @@ main section article .verde {
     }
     .desaparecerMobile{
         font-size: 0%;
-    }
-    .desaparecerMobile ol ul h3 {
-        font-size: 0%;
+        color: transparent;
+        text-shadow: none;
     }
 }
     /* Small devices (landscape phones, 576px and up) */
