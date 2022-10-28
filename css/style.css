@@ -46,12 +46,6 @@ body {
     font-weight: bold;
     
 }
-.navMenuItem {
-    margin: 0 25px;
-    width: max-content;
-    height: 30px;
-    padding: 1px 10px 0 10px;
-}
 .navMenuItem a {
     font-size: 16px;
 }
