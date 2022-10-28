@@ -479,19 +479,9 @@ iframe {
 
     /* Small devices (landscape phones, 576px and up) */
 @media screen and (min-width:0px) and (max-width: 576px) {  
-    header {
-        position:relative;
-    }
     .logo {
         width: 180px;
         height: 60px;
-    }
-    header nav {
-        display: block;
-    }
-    header nav ul{
-        display: block;
-        justify-content: center;
     }
     .logoPrincipal img{
         width: 250px;
@@ -505,13 +495,16 @@ iframe {
         border-radius: 0.7em;
         margin-top: 40px;
     }
+    .cardTrabajos {
+        margin-left: 5px;
+    }
     img {
         width: 400px;
         height: 300px;
     }
     .quienesSomos {
         font-size: 18px;
-        width: 400px;
+        width: 380px;
         display: block;
     }
     aside ul {
@@ -530,7 +523,7 @@ iframe {
         width: 360px;
     }
     .servicio {
-        margin-left: -50px;
+        margin: auto;
     }
     
     .serviciosFlex {
@@ -552,7 +545,7 @@ iframe {
         height: 0px;
     }
     .piePagina .box {
-        width: 480px;
+        width: 400px;
     }
     .piePagina .grupo1 .box h3 p{
         font-size: 18px;
@@ -575,13 +568,15 @@ iframe {
         padding: 5px 10px;
     }
     .Youtube {
-        width: 360px;
+        width: 400px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
     iframe {
+        margin: auto;
+        padding-top: 40px;
         width: 400px;
-        height: 2800px;
+        height: 300px;
         margin: -10px;
     }
 }
