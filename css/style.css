@@ -26,7 +26,7 @@ body {
     margin-left: 40px;
 }
 .mainIndex {
-    background-image: url(../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
+    background-image: url("../Assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
     background-size: cover;
     height: 1020px;
     width: 100%;
@@ -37,10 +37,6 @@ body {
     margin-bottom: 20px;
     color: #495057;
     display: flex;
-    }
-header:hover {
-        transform: scale(1.04);
-        transition: all 1s;
     }
 .navMenu {
     display: flex;
@@ -55,19 +51,14 @@ header:hover {
     width: max-content;
     height: 30px;
     padding: 1px 10px 0 10px;
-    border-radius: 0.7em;
-    transition-duration: 1s;
 }
 .navMenuItem a {
-    font-size: 20px;
+    font-size: 16px;
+}
+.navMenuItem a:hover {
     color: #00913C;
-    text-decoration: none;
+    text-decoration: line-through;
 }
-.navMenuItem:hover {
-    background: #61CE70;
-    box-shadow: 0 0 20px #61CE70;
-}
-
 .logoPrincipal img{
     margin-top: 40px;
     width: 400px;
@@ -123,13 +114,12 @@ img {
     width: 45px;
     height: 45px;
     line-height: 45px;
-    color: #00913C;
+    color: #000000;
     margin-right: 10px;
     background-color: #ced4da;
     text-align: center;
 }
 .piePagina .grupo1 .redSocial a :hover {
-    color: #00913C;
     transition: all 1s;
 }
 .piePagina .box .redSocial {
@@ -164,7 +154,7 @@ img {
 }
 h1 {
     text-align: center;
-    color: #00913C;
+    color: #ced4da;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     margin-bottom: 20px;
 }
@@ -180,26 +170,36 @@ h2, h3, p {
     font-weight: bold;
     margin-bottom: 15px;
 }
-.carousel {
-    display: flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items: center;
+
+.carousel-servicios {
+    margin: auto;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(112, 112, 112);
+    text-decoration: none;   
+}
+.carousel-item img{
+    border: solid 2px black;
+    border-radius: 0.7em;
+    margin-top: 40px;
+}
+.carousel-servicios li {
     list-style-type: none;
 }
-.carousel:hover {
-    transform: scale(1.02);
+.sectionCarousel {
+    border: 1px solid black;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 0.7em;
+    background-color: #ced4da;
+    box-shadow: 0 0 20px #495057, 2px 2px #3f454b;
 }
-.imgCarousel {
-    width: 600px;
-    text-align: center;
-    background-size: cover;
-}
-.imgCarousel:hover {
-    transform: scale(1.04);
+.sectionCarousel:hover {
+    scale: 1.05;
 }
 .quienesSomos {
-    color: #00913C;
+    color: #ced4da;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
@@ -245,12 +245,6 @@ aside ul {
     border-radius: 0.7em;
     max-width: max-content;
 }
-.serviciosDescripcion:hover { 
-    scale: 1.05;
-    background-color: #00913C;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: all 1s;
-    }
 .servicios {
     display: flex;
     flex-flow: wrap;
@@ -263,10 +257,9 @@ section .serviciosDescripcion a {
 }
 .servicio {
     width: 100%;
-    color: #2F8233;
+    color: #ced4da;
     display: flex;
 }
-
 .serviciosFlex {
     display: flex;
     justify-content:center;
@@ -282,18 +275,18 @@ section .serviciosDescripcion a {
 .serviciosFlex ul li {
     list-style: none;
 }
-
 .serviciosDescripcion {
-    background-color: rgba(78, 103, 117, 0.2);
     color: #495057;
     text-align: center;
     font-weight: bold;
     width: 470px;
     margin: 1.5em 0.9em;
     padding: 0.5em 1em;
-    border: solid 0.1em #495057;
-    border-radius: 0.7em;
-    box-shadow: 0 0 20px #61CE70, 2px 2px #00913C;
+    
+    }
+.serviciosDescripcion:hover { 
+    scale: 1.05;
+    transition: all 1s;
     }
 .serviciosDescripcion li {
     list-style-position:inside ;
@@ -303,19 +296,13 @@ section .serviciosDescripcion a {
     width: 430px;
     height: 300px;
 }
-.carousel-item img{
-    height: 650px;
-    border: solid 2px;
+#containerServicios {
+    width: 480px;
+    height: 400px;
+    box-shadow: 0 0 20px #61CE70, 2px 2px #00913C;    
+    border: solid 0.1em #495057;
     border-radius: 0.7em;
-    margin-top: 40px;
 }
-#carouselExampleCaptions {
-    width: 1400px;
-}
-#carouselExampleControls {
-    width: 1400px;
-}
-
 /*FAQ*/
 
 .preguntas{
@@ -384,7 +371,7 @@ article {
 }
 .contenedor .form .formLabel {
     display: block;
-    color: #00913C;
+    color: #ced4da;
     font-size: 16px;
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -396,7 +383,7 @@ article {
     color: white;
     border: none;
     outline: none;
-    border-bottom: 2px solid #00913C;
+    border-bottom: 2px solid #ced4da;
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -413,7 +400,7 @@ article {
     width: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     outline: none;
-    background-color: #00913C;
+    background-color: #0a53be;
     font-size: 16px;
     border: none;
     color: #fff;
@@ -430,7 +417,7 @@ iframe {
 }
 .verde {
     font-size: 20px;
-    color: #00913C;
+    color: #ced4da;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .contacto {display: flex; /*
@@ -472,9 +459,7 @@ iframe {
 }
 /*TRABAJOS REALIZADOS*/
 
-main section article .verde {
-    font-size: 0%;
-}
+
 .trabajos {
     display: flex;
     flex-flow: wrap;
@@ -485,169 +470,26 @@ main section article .verde {
     text-align: center;
     width: 580px;
     margin: 16px 8px;
-    padding: 0.5em 0;
-    border: solid 0.5px;
-    border-radius: 1.5%;
+    padding: 0.5em 1em;
 }
-.trabajosDescripcion img {
-    width: 560px;
-}
+    
 .youtube {
-        color: #00913C;
-        font-size: 20px;
-        text-align: center;
-        width: 1000px;
-        margin-top: 60px;
-        margin-bottom: 100px;
+    color: #00913C;
+    font-size: 20px;
+    text-align: center;
+    width: 1000px;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
-@media screen and (min-width:300px) and (max-width: 480px) { 
-    * {
-        font-size: 18px;
-    }
-
-    .mainIndex {
-        background-image: url(../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
-        background-size: cover;
-        height: 700px;
-        max-width: 576px;
-    } 
-    header {
-        position:relative;
-    }
-    .logo {
-        max-width: 160px;
-        height: 60px;
-    }
-    header nav {
-        display: block;
-    }
-    header nav ul{
-        display: block;
-        justify-content: center;
-    }
-    .logoPrincipal img{
-        width: 220px;
-        height: 150px;
-        display: block;
-    }
-    
-.carousel-item img{
-    height: 300px;
-    border: solid 2px;
-    border-radius: 0.7em;
-    margin-top: 40px;
-}
-#carouselExampleControls {
-    width: 300px;
-}
-    .quienesSomos {
-        max-width: 300px;
-        display: block;
-        font-size: 16px;
-    }
-    aside ul {
-        font-size: 20px;
-        max-width: 300px;
-    }
-    .solicitaPresupuesto {
-        max-width: 300px;
-        padding: 2px;
-    }
-    .serviciosDescripcion {
-        width: 300px;
-        }
-        
-    .serviciosDescripcion img {
-        width: 290px;
-        height: 230px;
-        padding: 15px 0 15px 0;
-        margin: -15px;
-    }
-    .servicio {
-        text-align: center;
-        max-width: 300px;
-        display: block;
-    }
-    
-    .serviciosFlex {
-        width: 200px;
-        font-size: 0%;
-        margin-top: -50px;
-        margin-left: -20px;
-    }
-    .trabajosDescripcion {
-        font-size: 18px;
-        width: 300px;
-        }   
-    .verde {
-        color: transparent;
-        text-shadow: 2px 2px 5px;
-    }
-    .trabajosDescripcion img {
-        width: 290px;
-        height: 250px;
-    }
-    .piePagina .grupo1 {
-        display: block;
-    }
-    
-    .piePagina .grupo1 .box figure img{
-        width: 0px;
-        height: 0px;
-    }
-    .piePagina .box {
-        width: 300px;
-    }
-    .piePagina .grupo1 .box h3 p{
-        font-size: 18px;
-        width: 300px;
-    }
-    .piePagina .box .redSocial {
-        margin-top: 20px;
-    }
-    .formularios {
-        margin: 10px;
-    }
-    .botonesForm {
-        display: inline;
-        width: 5em;
-    }
-    article {
-        margin: 20px 10px;
-    }
-    .contenedor .form {
-        width: 300px;
-        padding: 5px 10px;
-    }
-    .Youtube iframe{
-        width: 310px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-    }
-    iframe {
-        width: 300px;
-        height: 280px;
-    }
-    .desaparecerMobile{
-        font-size: 0%;
-        color: transparent;
-        text-shadow: none;
-    }
-}
     /* Small devices (landscape phones, 576px and up) */
-@media screen and (min-width:420px) and (max-width: 576px) { 
-    .mainIndex {
-        background-image: url(../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg);
-        background-size: cover;
-        height: 720px;
-        max-width: 576px;
-    } 
+@media screen and (min-width:0px) and (max-width: 576px) {  
     header {
         position:relative;
     }
     .logo {
-        max-width: 180px;
+        width: 180px;
         height: 60px;
     }
     header nav {
@@ -659,37 +501,31 @@ main section article .verde {
     }
     .logoPrincipal img{
         width: 250px;
-        height: 170px;
+        height: 180px;
         display: block;
     }
     
-.carousel-item img{
-    height: 400px;
-    border: solid 2px;
-    border-radius: 0.7em;
-    margin-top: 40px;
-}
-#carouselExampleControls {
-    width: 400px;
-}
-
+    .carousel-item img{
+        height: 400px;
+        border: solid 2px;
+        border-radius: 0.7em;
+        margin-top: 40px;
+    }
     img {
-        max-width: 400px;
+        width: 400px;
         height: 300px;
     }
     .quienesSomos {
-        max-width: 380px;
+        font-size: 18px;
+        width: 400px;
         display: block;
-    }
-    .quienesSomos h1 {
-        font-size: 20px;
     }
     aside ul {
         font-size: 20px;
-        max-width: 400px;
+        width: 400px;
     }
     .solicitaPresupuesto {
-        max-width: 400px;
+        width: 400px;
         padding: 2px;
     }
     .serviciosDescripcion {
@@ -700,20 +536,18 @@ main section article .verde {
         width: 360px;
     }
     .servicio {
-        text-align: center;
-        max-width: 400px;
-        display: block;
+        margin-left: -50px;
     }
     
     .serviciosFlex {
         width: 200px;
-        font-size: 0%;
+        font-size: 16px;
         margin-top: -50px;
         margin-left: -20px;
     }
     .trabajosDescripcion {
         font-size: 18px;
-        max-width: 400px;
+        width: 400px;
         }   
     .piePagina .grupo1 {
         display: block;
@@ -723,9 +557,11 @@ main section article .verde {
         width: 0px;
         height: 0px;
     }
+    .piePagina .box {
+        width: 480px;
+    }
     .piePagina .grupo1 .box h3 p{
         font-size: 18px;
-        width: 390px;
     }
     .piePagina .box .redSocial {
         margin-top: 20px;
@@ -741,46 +577,26 @@ main section article .verde {
         margin: 20px 10px;
     }
     .contenedor .form {
-        width: 370px;
+        width: 300px;
         padding: 5px 10px;
     }
-
-    .Youtube iframe{
-        width: 410px;
-        height: 300px;
+    .Youtube {
+        width: 360px;
         margin-top: 30px;
         margin-bottom: 10px;
     }
     iframe {
-        width: 420px;
-        height: 350px;
-    }
-    .desaparecerMobile{
-        font-size: 0%;
-    }
-    .desaparecerMobile ol ul h3 {
-        font-size: 0%;
-    }
-    .verde {
-        color: transparent;
-        text-shadow: none;
+        width: 400px;
+        height: 2800px;
+        margin: -10px;
     }
 }
 /*  Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 577px) and (max-width: 767px) { 
+@media screen and (min-width: 577px) and (max-width: 768px) { 
     .quienesSomos {
         font-size: 18px;
         width: 560px;
         display: block;
-    }
-    .carousel-item img{
-        height: 450px;
-        border: solid 2px;
-        border-radius: 0.7em;
-        margin-top: 40px;
-    }
-    #carouselExampleControls {
-        width: 580px;
     }
     aside ul {
         font-size: 20px;
@@ -853,15 +669,6 @@ main section article .verde {
         width: 770px;
         display: block;
     }
-    .carousel-item img{
-        height: 650px;
-        border: solid 2px;
-        border-radius: 0.7em;
-        margin-top: 40px;
-    }
-    #carouselExampleControls {
-        width: 800px;
-    }
     aside ul {
         font-size: 20px;
         width: 730px;
@@ -878,7 +685,7 @@ main section article .verde {
     }
     .servicios {
     margin: 8px 4px;
-}
+    }
 
     .serviciosDescripcion {
         width: 360px;
@@ -918,15 +725,6 @@ main section article .verde {
     }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {  
-    .carousel-item img{
-        height: 500px;
-        border: solid 2px;
-        border-radius: 0.7em;
-        margin-top: 40px;
-    }
-    #carouselExampleControls {
-        width: 1000px;
-    }
     aside ul {
         font-size: 20px;
         width: 730px;
@@ -944,7 +742,6 @@ main section article .verde {
     .servicios {
     margin: 8px 4px;
     }
-
     .serviciosDescripcion {
         width: 420px;
     }
@@ -957,15 +754,6 @@ main section article .verde {
     }
     }
     @media screen and (min-width: 1201px) and (max-width: 1440px) {  
-        .carousel-item img{
-            height: 700px;
-            border: solid 2px;
-            border-radius: 0.7em;
-            margin-top: 40px;
-        }
-        #carouselExampleControls {
-            width: 1200px;
-        }
         .solicitaPresupuesto {
             width: 1100px;
             display: block;
@@ -974,7 +762,6 @@ main section article .verde {
         .servicios {
         margin: 8px 4px;
         }
-    
         .serviciosDescripcion {
             width: 420px;
         }
