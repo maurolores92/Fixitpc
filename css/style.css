@@ -214,6 +214,7 @@ aside ul {
     margin-bottom: 60px;
     list-style-type: none;
 }
+
 /* SERVICIOS*/
 
 .solicita-presupuesto {
@@ -484,7 +485,7 @@ iframe {
         width: 180px;
         height: 60px;
     }
-    .logoPrincipal img{
+    .logo-principal img{
         width: 250px;
         height: 180px;
         display: block;
@@ -496,14 +497,17 @@ iframe {
         border-radius: 0.7em;
         margin-top: 40px;
     }
-    .cardTrabajos {
+    #contenedorCarousel {
+        margin-left: 10px;
+    }
+    .card-trabajos {
         margin-left: 5px;
     }
     img {
         width: 400px;
         height: 300px;
     }
-    .quienesSomos {
+    .quienes-somos {
         font-size: 18px;
         width: 380px;
         display: block;
@@ -512,52 +516,52 @@ iframe {
         font-size: 20px;
         width: 400px;
     }
-    .solicitaPresupuesto {
+    .solicita-presupuesto {
         width: 400px;
         padding: 2px;
     }
-    .serviciosDescripcion {
+    .servicios-descripcion {
         width: 400px;
         }
         
-    .serviciosDescripcion img {
+    .servicios-descripcion img {
         width: 360px;
     }
     .servicio {
         margin: auto;
     }
     
-    .serviciosFlex {
+    .servicios-flex {
         width: 200px;
         font-size: 16px;
         margin-top: -50px;
         margin-left: -20px;
     }
-    .trabajosDescripcion {
+    .trabajos-descripcion {
         font-size: 18px;
         width: 400px;
         }   
-    .piePagina .grupo1 {
+    .pie-pagina .grupo1 {
         display: block;
     }
     
-    .piePagina .grupo1 .box figure img{
+    .pie-pagina .grupo1 .box figure img{
         width: 0px;
         height: 0px;
     }
-    .piePagina .box {
+    .pie-pagina .box {
         width: 400px;
     }
-    .piePagina .grupo1 .box h3 p{
+    .pie-pagina .grupo1 .box h3 p{
         font-size: 18px;
     }
-    .piePagina .box .redSocial {
+    .pie-pagina .box .red-social {
         margin-top: 20px;
     }
     .formularios {
         margin: 10px;
     }
-    .botonesForm {
+    .botones-form {
         display: inline;
         width: 5em;
     }
@@ -568,7 +572,7 @@ iframe {
         width: 300px;
         padding: 5px 10px;
     }
-    .Youtube {
+    .youtube {
         width: 400px;
         margin-top: 30px;
         margin-bottom: 10px;
@@ -583,7 +587,7 @@ iframe {
 }
 /*  Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 577px) and (max-width: 768px) { 
-    .quienesSomos {
+    .quienes-somos {
         font-size: 18px;
         width: 560px;
         display: block;
@@ -593,38 +597,38 @@ iframe {
         width: 550px;
         display: block;
     }
-    .solicitaPresupuesto {
+    .solicita-presupuesto {
         width: 550px;
         display: block;
         padding: 5px;
     }
-    .piePagina .grupo1 {
+    .pie-pagina .grupo1 {
         display: block;
     }
-    .piePagina .grupo1 .box figure img{
+    .pie-pagina .grupo1 .box figure img{
         width: 0px;
         height: 0px;
     }
-    .piePagina .box {
+    .pie-pagina .box {
         width: 480px;
     }
-    .piePagina .grupo1 .box h3 p{
+    .pie-pagina .grupo1 .box h3 p{
         font-size: 18px;
     }
-    .piePagina .box .redSocial {
+    .pie-pagina .box .red-social {
         margin-top: 20px;
     }
-    .serviciosDescripcion {
+    .servicios-descripcion {
         width: 520px;
     }
-    .serviciosDescripcion img {
+    .servicios-descripcion img {
         width: 480px;
     }
     .servicio {
         margin-left: -50px;
     }
     
-    .serviciosFlex {
+    .servicios-flex {
         width: 200px;
         font-size: 16px;
         margin-top: -50px;
@@ -632,7 +636,7 @@ iframe {
     .formularios {
         margin: 10px;
     }
-    .botonesForm {
+    .botones-form {
         display: inline;
         width: 5em;
     }
@@ -643,7 +647,7 @@ iframe {
     article {
         margin: 20px 10px;
     }
-    .Youtube {
+    .youtube {
         width: 570px;
         margin-top: 30px;
         margin-bottom: 10px;
@@ -654,7 +658,7 @@ iframe {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {  
-    .quienesSomos {
+    .quienes-somos {
         font-size: 20px;
         width: 770px;
         display: block;
@@ -664,12 +668,12 @@ iframe {
         width: 730px;
         display: block;
     }
-    .solicitaPresupuesto {
+    .solicita-presupuesto {
         width: 730px;
         display: block;
         padding: 5px;
     }
-    .piePagina .grupo1 .box figure img{
+    .pie-pagina .grupo1 .box figure img{
         width: 220px;
         height: 170px;
     }
@@ -677,10 +681,10 @@ iframe {
     margin: 8px 4px;
     }
 
-    .serviciosDescripcion {
+    .servicios-descripcion {
         width: 360px;
     }
-    .serviciosDescripcion img {
+    .servicios-descripcion img {
         width: 330px;
         height: 260px;
     }
@@ -688,7 +692,7 @@ iframe {
         margin-left: -50px;
     }
     
-    .serviciosFlex {
+    .servicios-flex {
         width: 200px;
         font-size: 18px;
         margin-top: -50px;
@@ -696,7 +700,7 @@ iframe {
     .formularios {
         margin: 10px;
     }
-    .botonesForm {
+    .botones-form {
         display: inline;
         width: 5em;
     }
@@ -704,7 +708,7 @@ iframe {
         width: 700px;
         padding: 5px 25px;
     }
-    .Youtube {
+    .youtube {
         width: 750px;
         margin-top: 30px;
         margin-bottom: 10px;
@@ -720,31 +724,31 @@ iframe {
         width: 730px;
         display: block;
     }
-    .solicitaPresupuesto {
+    .solicita-presupuesto {
         width: 950px;
         display: block;
         padding: 5px;
     }
-    .piePagina .grupo1 .box figure img{
+    .pie-pagina .grupo1 .box figure img{
         width: 220px;
         height: 170px;
     }
     .servicios {
     margin: 8px 4px;
     }
-    .serviciosDescripcion {
+    .servicios-descripcion {
         width: 420px;
     }
-    .serviciosDescripcion img {
+    .servicios-descripcion img {
         width: 390px;
         height: 340px;
     }
-    .recuadroInformativo {
+    .recuadro-informativo {
         width: 430px;
     }
     }
     @media screen and (min-width: 1201px) and (max-width: 1440px) {  
-        .solicitaPresupuesto {
+        .solicita-presupuesto {
             width: 1100px;
             display: block;
             padding: 5px;
@@ -752,14 +756,14 @@ iframe {
         .servicios {
         margin: 8px 4px;
         }
-        .serviciosDescripcion {
+        .servicios-descripcion {
             width: 420px;
         }
-        .serviciosDescripcion img {
+        .servicios-descripcion img {
             width: 390px;
             height: 340px;
         }
-        .recuadroInformativo {
+        .recuadro-informativo {
             width: 430px;
         }
 }
