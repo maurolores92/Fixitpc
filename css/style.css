@@ -498,10 +498,13 @@ iframe {
         margin-top: 40px;
     }
     #contenedorCarousel {
-        margin-left: 10px;
+        margin-left: 8px;
+    }
+    #cardTrabajos {
+        margin-left: 5px;
     }
     .card-trabajos {
-        margin-left: 5px;
+        margin-left: 4px;
     }
     img {
         width: 400px;
@@ -574,14 +577,15 @@ iframe {
     }
     .youtube {
         width: 400px;
+        height: 400px;
         margin-top: 30px;
         margin-bottom: 10px;
+        margin-left: 3px;
     }
     iframe {
         margin: auto;
         padding-top: 40px;
         width: 400px;
-        height: 300px;
         margin: -10px;
     }
 }
