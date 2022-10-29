@@ -498,7 +498,7 @@ iframe {
         margin-top: 40px;
     }
     #contenedorCarousel {
-        margin-left: 8px;
+        margin-left: 6px;
     }
     #cardTrabajos {
         margin-left: 5px;
@@ -586,7 +586,7 @@ iframe {
         margin: auto;
         padding-top: 40px;
         width: 400px;
-        margin: -10px;
+        height: 400px;
     }
 }
 /*  Medium devices (tablets, 768px and up) */
