@@ -1,0 +1,90 @@
+.pie-pagina {
+    width: 100%;
+    background-color: #ced4da;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: hidden;
+    border: solid 1px;
+    box-shadow: 0 0 20px #495057;
+
+
+    .grupo1 {
+        width: 100%;
+        max-width: 1700px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 20px 0px;
+
+        @media screen and (max-width: 776px) {
+            display: block;
+        }
+        .box {
+            figure {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a {
+                    img {
+                        width: 484px;
+                        height: 189px;
+
+                        @media screen and (max-width: 776px) {
+                            width: 0px;
+                            height: 0px;
+                        }
+                        @media screen and (min-width: 777px) and (max-width: 992px){
+                            width: 200px;
+                            height: 130px;
+                            margin-left: 20px;
+                        }
+                        @media screen and (min-width: 993px) and (max-width: 1200px){
+                            width: 300px;
+                            height: 170px;
+                            margin-left: 20px;
+                        }
+                        }
+                    }
+                }
+            .red-social {
+                text-align: center;
+                margin-top: 60px;
+                    @media screen and (max-width: 776px) {
+                        margin-top: -20px;
+                    }
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #000000;
+                    margin-right: 10px;
+                    background-color: #ced4da;
+                    text-align: center;
+                    &:hover {
+                        transition: all 1s;
+                    }
+                    .logos-rrss {
+                        transform: scale(1.2);
+                        transition: all 1s;
+                    }
+                }
+            }
+            h3 {
+                color: #495057;
+                margin-bottom: 25px;
+                font-size: 20px;
+                text-align: center;
+                }
+            p {
+                color: #495057;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+            }
+        }
+    }

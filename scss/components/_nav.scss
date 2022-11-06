@@ -1,0 +1,24 @@
+nav {
+    div {
+        a {
+            .logo {
+                width: 180px;
+                height: 60px;
+                margin-left: 40px;
+            }
+            }
+        div {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                    &:hover {
+                        color: #00913C;
+                        text-decoration: line-through;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    }

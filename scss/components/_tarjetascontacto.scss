@@ -1,0 +1,42 @@
+.contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    .recuadro-contacto {
+        text-align: center;
+        width: 300px;
+        height: 350px;
+        margin: 70px 0 40px 0;
+        padding-top: 30px;
+        background-color: #ebebeb;
+        box-shadow: 0 0 10px #000000, 1px 1px #000000;
+        &:hover {
+            scale: 1.04;
+            background: rgba(0,0,0,.2);
+            }
+        a {
+            text-decoration: none;
+            color: #000000;
+            align-content: center;
+            img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+        p {
+            font-size: 18px;
+            text-shadow: 1px 1px 10px #929292;
+            padding: 30px 0;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media screen and (max-width:576px) {
+            margin: 10px;
+            }
+            
+        @media screen and (min-width: 577px) and (max-width: 768px){
+            margin: 20px;
+            }
+    }
+}

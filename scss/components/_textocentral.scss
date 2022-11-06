@@ -1,0 +1,26 @@
+
+.texto-central {
+    background-color: #ced4da;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 50em;
+    display: block;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    border: solid 1px #495057;
+    border-radius: 0.7em;
+    box-shadow: 0 0 20px #495057, 2px 2px #3f454b;
+    list-style-type: none;
+    li {
+        a {
+        color: #000;
+        }
+        @media screen and (max-width:576px) {
+            font-size: 16px;
+            }
+    }
+}
+

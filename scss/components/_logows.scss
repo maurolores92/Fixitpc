@@ -1,0 +1,16 @@
+.rrss-fixed {
+    background-color: #25D366;
+    color: #495057;
+    border: solid;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+}

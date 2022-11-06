@@ -1,0 +1,32 @@
+.tarjetas-trabajos {
+    .row {
+        
+        .col {
+            max-width: 800px; 
+            padding-top: 30px; 
+            text-align: center;
+            
+        }
+        .card {
+            width: 650px;
+            margin-top: 10px;
+                @media screen and (max-width:576px) {
+                    width: 380px;
+                    }
+                @media screen and (min-width: 577px) and (max-width: 768px){
+                    max-width: 560px;
+                    }
+            img {
+                height: 500px;
+                width: 640px;
+                @media screen and (max-width:576px) {
+                    width: 380px;
+                    height: 300px;
+                    }
+                @media screen and (min-width: 577px) and (max-width: 768px){
+                    max-width: 560px;
+                    }
+            }
+        }
+    }
+}
