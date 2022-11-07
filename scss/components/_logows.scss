@@ -1,7 +1,9 @@
+@import "../base/variables";
+
 .rrss-fixed {
     background-color: #25D366;
-    color: #495057;
-    border: solid;
+    color: $c-opcional;
+    border:$border-general;
     border-radius: 50%;
     width: 3em;
     height: 3em;

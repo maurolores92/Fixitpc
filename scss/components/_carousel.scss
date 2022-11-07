@@ -1,14 +1,16 @@
+@import "../base/variables";
+
 section {
     a {
         text-decoration: none;
-        color: #ced4da;
+        color: $c-general;
         div {
             .section-carousel {
-            border: 1px solid black;
+            border: $border-general;
             margin-top: 20px;
             padding-bottom: 30px;
             border-radius: 0.7em;
-            background-color: #ced4da;
+            background-color: $gb-general;
             box-shadow: 0 0 20px #495057, 2px 2px #3f454b;
             margin-left: 1px;
             &:hover {
@@ -19,7 +21,7 @@ section {
                 div {
                     div {
                         .carousel-item {
-                            border: solid 2px black;
+                            border: $border-general;
                             border-radius: 0.7em;
                             margin-top: 40px;
                             }
@@ -29,7 +31,7 @@ section {
             }
         .carousel-servicios {
             margin: auto;
-            color: #000;
+            color: $c-opcional;
             font-size: 20px;
             font-weight: bold;
             text-shadow: 2px 2px 5px rgb(112, 112, 112);

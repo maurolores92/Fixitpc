@@ -1,6 +1,7 @@
+@import "../base/variables";
 .pie-pagina {
     width: 100%;
-    background-color: #ced4da;
+    background-color: $gb-general;
     margin-top: 20px;
     display: flex;
     overflow-x: hidden;
@@ -61,9 +62,9 @@
                     width: 45px;
                     height: 45px;
                     line-height: 45px;
-                    color: #000000;
+                    color: $c-opcional;
                     margin-right: 10px;
-                    background-color: #ced4da;
+                    background-color: $gb-general;
                     text-align: center;
                     &:hover {
                         transition: all 1s;
@@ -75,13 +76,13 @@
                 }
             }
             h3 {
-                color: #495057;
+                color: $c-opcional;
                 margin-bottom: 25px;
                 font-size: 20px;
                 text-align: center;
                 }
             p {
-                color: #495057;
+                color: $c-opcional;
                 margin-bottom: 10px;
                 text-align: center;
             }

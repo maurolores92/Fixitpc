@@ -18,57 +18,75 @@ body {
   overflow-x: hidden;
 }
 
-/* pagina index */
-.main-index {
-  background-image: url("../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
-  background-size: cover;
-  height: 1020px;
-  width: 100%;
-}
-.main-index nav div a .logo {
-  width: 180px;
-  height: 60px;
-  margin-left: 40px;
-}
-.main-index nav div div ul li a {
-  font-size: 16px;
-}
-.main-index nav div div ul li a:hover {
-  color: #00913C;
-  text-decoration: line-through;
-}
-.main-index .logo-principal {
-  margin-top: 40px;
-  width: 400px;
-  height: 220px;
+h2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
-  display: block;
-}
-@media screen and (min-width: 0px) and (max-width: 576px) {
-  .main-index .logo-principal {
-    width: 250px;
-    height: 180px;
-    margin-top: 60px;
-    margin-bottom: -60px;
-  }
-}
-.main-index .quienes-somos {
-  color: #ced4da;
-  font-size: 20px;
   font-weight: bold;
-  text-align: center;
-  width: 1000px;
-  display: block;
-  margin-top: 60px;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 15px;
 }
 
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
+.contacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.contacto .recuadro-contacto {
+  text-align: center;
+  width: 300px;
+  height: 350px;
+  margin: 70px 0 40px 0;
+  padding-top: 30px;
+  background-color: #ebebeb;
+  box-shadow: 0 0 10px #000000, 1px 1px #000000;
+}
+.contacto .recuadro-contacto:hover {
+  scale: 1.04;
+  background: rgba(0, 0, 0, 0.2);
+}
+.contacto .recuadro-contacto a {
+  text-decoration: none;
+  color: #000000;
+  align-content: center;
+}
+.contacto .recuadro-contacto a img {
+  width: 120px;
+  height: 120px;
+}
+.contacto .recuadro-contacto p {
+  font-size: 18px;
+  text-shadow: 1px 1px 10px #929292;
+  padding: 30px 0;
+  font-weight: bold;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .contacto .recuadro-contacto {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .contacto .recuadro-contacto {
+    margin: 20px;
+  }
+}
+
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 section a {
   text-decoration: none;
   color: #ced4da;
 }
 section a div .section-carousel {
-  border: 1px solid black;
+  border: solid 1px #495057;
   margin-top: 20px;
   padding-bottom: 30px;
   border-radius: 0.7em;
@@ -80,13 +98,13 @@ section a div .section-carousel:hover {
   scale: 1.05;
 }
 section a div div div div .carousel-item {
-  border: solid 2px black;
+  border: solid 1px #495057;
   border-radius: 0.7em;
   margin-top: 40px;
 }
 section a .carousel-servicios {
   margin: auto;
-  color: #000;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgb(112, 112, 112);
@@ -107,9 +125,14 @@ section a .carousel-servicios ul li {
   list-style-type: none;
 }
 
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 .texto-central {
   background-color: #ced4da;
-  color: #000;
+  color: #000000;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -124,7 +147,7 @@ section a .carousel-servicios ul li {
   list-style-type: none;
 }
 .texto-central li a {
-  color: #000;
+  color: #000000;
 }
 @media screen and (max-width: 576px) {
   .texto-central li {
@@ -132,14 +155,54 @@ section a .carousel-servicios ul li {
   }
 }
 
-h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 15px;
+@media screen and (max-width: 576px) {
+  .quienes-somos {
+    max-width: 380px;
+    margin-top: -60px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .quienes-somos {
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .quienes-somos {
+    max-width: 770px;
+  }
 }
 
-/*FOOTER*/
+@media screen and (max-width: 576px) {
+  .texto-central {
+    width: 380px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .texto-central {
+    max-width: 550px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .texto-central {
+    max-width: 730px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .texto-central {
+    max-width: 950px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .texto-central {
+    max-width: 1100px;
+  }
+}
+
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 .pie-pagina {
   width: 100%;
   background-color: #ced4da;
@@ -222,22 +285,26 @@ h2 {
   transition: all 1s;
 }
 .pie-pagina .grupo1 .box h3 {
-  color: #495057;
+  color: #000000;
   margin-bottom: 25px;
   font-size: 20px;
   text-align: center;
 }
 .pie-pagina .grupo1 .box p {
-  color: #495057;
+  color: #000000;
   margin-bottom: 10px;
   text-align: center;
 }
 
-/*Logo FIXED WHATSAPP*/
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 .rrss-fixed {
   background-color: #25D366;
-  color: #495057;
-  border: solid;
+  color: #000000;
+  border: solid 1px #495057;
   border-radius: 50%;
   width: 3em;
   height: 3em;
@@ -251,23 +318,11 @@ h2 {
   transition: all 1s;
 }
 
-/*SERVICIOS*/
-.main-index h1 {
-  text-align: center;
-  color: #ced4da;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-.main-index article {
-  width: 100%;
-  color: #ced4da;
-  display: flex;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-.main-index article div div div {
-  margin-left: -30px;
-}
-
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 .servicios {
   display: flex;
   flex-flow: wrap;
@@ -275,7 +330,7 @@ h2 {
   align-content: space-around;
 }
 .servicios .servicios-descripcion {
-  color: #495057;
+  color: #000000;
   text-align: center;
   font-weight: bold;
   width: 470px;
@@ -288,7 +343,11 @@ h2 {
 }
 .servicios .servicios-descripcion a {
   text-decoration: none;
-  color: white;
+  color: #ced4da;
+  background-color: #0a53be;
+}
+.servicios .servicios-descripcion a:hover {
+  background-color: #073e8e;
 }
 .servicios .servicios-descripcion li {
   list-style-position: inside;
@@ -299,7 +358,11 @@ h2 {
   height: 300px;
 }
 
-/*FORMULARIOS*/
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 div .form {
   background: rgba(0, 0, 0, 0.6);
   width: 800px;
@@ -313,7 +376,7 @@ div .form {
 div .form .form-header .form-title {
   font-weight: normal;
   font-family: sans-serif;
-  color: #fff;
+  color: #ced4da;
   text-align: center;
   padding: 14px 0;
 }
@@ -331,7 +394,7 @@ div .form .form-input {
   max-height: 150px;
   min-height: 50px;
   background: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: #ced4da;
   border: none;
   outline: none;
   border-bottom: 2px solid #ced4da;
@@ -345,7 +408,7 @@ div .form .form-texarea {
   max-height: 150px;
   min-height: 50px;
   background: rgba(0, 0, 0, 0.7);
-  color: white;
+  color: #ced4da;
   border: none;
   outline: none;
   border-bottom: 2px solid #ced4da;
@@ -362,12 +425,12 @@ div .form .botones-form {
   background-color: #0a53be;
   font-size: 16px;
   border: none;
-  color: #fff;
+  color: #ced4da;
   cursor: pointer;
   transition: all 0.5sg ease;
 }
 div .form .botones-form:hover {
-  background: #05357e;
+  background: #073e8e;
 }
 @media screen and (max-width: 576px) {
   div .form {
@@ -398,44 +461,18 @@ div .form .botones-form:hover {
   }
 }
 
-/* TRABAJOS REALIZADOS*/
-.youtube iframe {
-  width: 1000px;
-  height: 500px;
-  display: flex;
-}
-@media screen and (max-width: 576px) {
-  .youtube iframe {
-    width: 400px;
-    height: 400px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .youtube iframe {
-    width: 570px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .youtube iframe {
-    width: 750px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-}
-.youtube .verde {
-  font-size: 20px;
-  color: #ced4da;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
 .tarjetas-trabajos .row .col {
   max-width: 800px;
   padding-top: 30px;
   text-align: center;
 }
 .tarjetas-trabajos .row .card {
+  color: #000000;
   width: 650px;
   margin-top: 10px;
 }
@@ -463,6 +500,98 @@ div .form .botones-form:hover {
   .tarjetas-trabajos .row .card img {
     max-width: 560px;
   }
+}
+
+iframe {
+  width: 1000px;
+  height: 500px;
+  display: flex;
+}
+@media screen and (max-width: 576px) {
+  iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  iframe {
+    width: 570px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  iframe {
+    width: 750px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/ /*INDEX*/
+.main-index {
+  background-image: url("../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+  background-size: cover;
+  height: 1020px;
+  width: 100%;
+}
+.main-index nav div a .logo {
+  width: 180px;
+  height: 60px;
+  margin-left: 40px;
+}
+.main-index nav div div ul li a {
+  font-size: 16px;
+}
+.main-index nav div div ul li a:hover {
+  color: #00913C;
+  text-decoration: line-through;
+}
+.main-index .logo-principal {
+  margin-top: 40px;
+  width: 400px;
+  height: 220px;
+  text-align: center;
+  display: block;
+}
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  .main-index .logo-principal {
+    width: 250px;
+    height: 180px;
+    margin-top: 60px;
+    margin-bottom: -60px;
+  }
+}
+.main-index .quienes-somos {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  width: 1000px;
+  display: block;
+  margin-top: 60px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+/*SERVICIOS*/
+.main-index h1 {
+  text-align: center;
+  color: #ced4da;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.main-index article {
+  width: 100%;
+  color: #ced4da;
+  display: flex;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.main-index article div div div {
+  margin-left: -30px;
 }
 
 /*PREGUNTAS FRECUENTES*/
@@ -513,95 +642,6 @@ div .form .botones-form:hover {
   padding: 30px 0;
   font-weight: bold;
   text-align: center;
-}
-
-.contacto {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
-}
-.contacto .recuadro-contacto {
-  text-align: center;
-  width: 300px;
-  height: 350px;
-  margin: 70px 0 40px 0;
-  padding-top: 30px;
-  background-color: #ebebeb;
-  box-shadow: 0 0 10px #000000, 1px 1px #000000;
-}
-.contacto .recuadro-contacto:hover {
-  scale: 1.04;
-  background: rgba(0, 0, 0, 0.2);
-}
-.contacto .recuadro-contacto a {
-  text-decoration: none;
-  color: #000000;
-  align-content: center;
-}
-.contacto .recuadro-contacto a img {
-  width: 120px;
-  height: 120px;
-}
-.contacto .recuadro-contacto p {
-  font-size: 18px;
-  text-shadow: 1px 1px 10px #929292;
-  padding: 30px 0;
-  font-weight: bold;
-  text-align: center;
-}
-@media screen and (max-width: 576px) {
-  .contacto .recuadro-contacto {
-    margin: 10px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .contacto .recuadro-contacto {
-    margin: 20px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .quienes-somos {
-    max-width: 380px;
-    margin-top: -60px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .quienes-somos {
-    max-width: 500px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .quienes-somos {
-    max-width: 770px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .texto-central {
-    width: 380px;
-  }
-}
-@media screen and (min-width: 577px) and (max-width: 768px) {
-  .texto-central {
-    max-width: 550px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .texto-central {
-    max-width: 730px;
-  }
-}
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-  .texto-central {
-    max-width: 950px;
-  }
-}
-@media screen and (min-width: 1201px) {
-  .texto-central {
-    max-width: 1100px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

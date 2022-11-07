@@ -1,8 +1,18 @@
 
 @import "./components/body";
+@import "./components/_tarjetascontacto.scss";
+@import "./components/_carousel.scss";
+@import "./components/_textocentral.scss";
+@import "./components/mediaqueris";
+@import "./components/_footer.scss";
+@import "./components/_logows.scss";
+@import "./components/_tarjetaservicio.scss";
+@import "./components/_formulario.scss";
+@import "./components/_tarjetatrabajo.scss";
+@import "./components/_youtube.scss";
 
-/* pagina index */
-
+@import "./base/variables";
+/*INDEX*/
 .main-index {
     background-image: url("../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
     background-size: cover;
@@ -12,9 +22,8 @@
     @import "./components/nav";
 
     @import "./components/_logoprincipal.scss";
-    
     .quienes-somos {
-        color: #ced4da;
+        color: $c-general;
         font-size: 20px;
         font-weight: bold;
         text-align: center;
@@ -24,36 +33,17 @@
         text-shadow: 2px 2px 5px rgb(0, 0, 0);
         }
     }
-
-@import "./components/_carousel.scss";
-@import "./components/_textocentral.scss";
-
-h2{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-    }
-
-/*FOOTER*/
-
-@import "./components/_footer.scss";
-
-/*Logo FIXED WHATSAPP*/
-
-@import "./components/_logows.scss";
-
 /*SERVICIOS*/
 .main-index {
     h1 {
         text-align: center;
-    color: #ced4da;
+    color: $c-general;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
     margin-bottom: 20px;
     }
     article {
         width: 100%;
-        color: #ced4da;
+        color: $c-general;
         display: flex;
         text-shadow: 2px 2px 5px rgb(0, 0, 0);
         div {
@@ -65,25 +55,6 @@ h2{
         }
     }
 }
-@import "./components/_tarjetaservicio.scss";
-
-/*FORMULARIOS*/
-
-@import "./components/_formulario.scss";
-
-/* TRABAJOS REALIZADOS*/
-
-.youtube {
-    @import "./components/_youtube.scss";
-    .verde {
-        font-size: 20px;
-        color: #ced4da;
-        text-shadow: 2px 2px 5px rgb(0, 0, 0);
-        }
-    }
-@import "./components/_tarjetatrabajo.scss";
-
-
 /*PREGUNTAS FRECUENTES*/
 .main-index {
     .container {
@@ -99,12 +70,11 @@ h2{
     }
     .titulo-preguntas {
         text-align: center;
-        color: #ced4da;
+        color: $c-general;
         text-shadow: 2px 2px 5px rgb(0, 0, 0);
         margin-bottom: 20px;
     }
 }
-
 /*CONTACTO*/
 .main-index {
     section {
@@ -112,7 +82,7 @@ h2{
         div {
             p {
                 font-size: 18px;
-                color: #ced4da;
+                color: $c-general;
                 text-shadow: 2px 2px 5px rgb(0, 0, 0);
                 padding: 30px 0;
                 font-weight: bold;
@@ -121,6 +91,3 @@ h2{
         }
     }
 }
-@import "./components/_tarjetascontacto.scss";
-
-@import "./components/mediaqueris"
