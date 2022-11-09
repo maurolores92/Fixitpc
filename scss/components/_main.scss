@@ -1,0 +1,63 @@
+@import "../base/extends";
+
+/*INDEX*/
+.main-index {
+    background-image: url("../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+    background-size: cover;
+    height: 1020px;
+    width: 100%;
+
+    @import "./nav";
+    @import "./logoprincipal";
+    
+    .quienes-somos {
+        @extend %texto-main;
+        }
+    }
+/*SERVICIOS*/
+.main-index {
+    h1 {
+        @extend %servicio-main;
+    }
+    article {
+        width: 100%;
+        color: $c-general;
+        display: flex;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        div {
+            div {
+                div {
+                    margin-left: -30px
+                }
+            }
+        }
+    }
+}
+/*PREGUNTAS FRECUENTES*/
+.main-index {
+    .container {
+        margin-top: 6%;
+        margin-bottom: 10%;
+        .row {
+            .col {
+                .card {
+                    max-width: 18rem;
+                }
+            }
+        }
+    }
+    .titulo-preguntas {
+        @extend %servicio-main;
+    }
+}
+/*CONTACTO*/
+.main-index {
+    section {
+        @import "./youtube";
+        div {
+            p {
+                @extend %ubicacion-contacto;
+            }
+        }
+    }
+}

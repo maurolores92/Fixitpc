@@ -532,7 +532,72 @@ iframe {
 /*colores de letras*/
 /*BORDES*/
 /*FONT*/
-/*Botones*/ /*INDEX*/
+/*Botones*/
+.main-index .quienes-somos {
+  color: #ced4da;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.main-index .titulo-preguntas, .main-index h1 {
+  text-align: center;
+  color: #ced4da;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.main-index section div p {
+  font-size: 18px;
+  color: #ced4da;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding: 30px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
+/* colores de FONDOS */
+/*colores de letras*/
+/*BORDES*/
+/*FONT*/
+/*Botones*/
+.main-index .quienes-somos {
+  color: #ced4da;
+  font-weight: bold;
+  text-align: center;
+  width: 75%;
+  display: block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.main-index .titulo-preguntas, .main-index h1 {
+  text-align: center;
+  color: #ced4da;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.main-index section div p {
+  font-size: 18px;
+  color: #ced4da;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding: 30px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*INDEX*/
 .main-index {
   background-image: url("../assets/img/Logos/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
   background-size: cover;
@@ -566,24 +631,7 @@ iframe {
     margin-bottom: -60px;
   }
 }
-.main-index .quienes-somos {
-  color: #ced4da;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  width: 1000px;
-  display: block;
-  margin-top: 60px;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-}
-
 /*SERVICIOS*/
-.main-index h1 {
-  text-align: center;
-  color: #ced4da;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
 .main-index article {
   width: 100%;
   color: #ced4da;
@@ -602,13 +650,6 @@ iframe {
 .main-index .container .row .col .card {
   max-width: 18rem;
 }
-.main-index .titulo-preguntas {
-  text-align: center;
-  color: #ced4da;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  margin-bottom: 20px;
-}
-
 /*CONTACTO*/
 .main-index section iframe {
   width: 1000px;
@@ -634,14 +675,6 @@ iframe {
     margin-top: 30px;
     margin-bottom: 10px;
   }
-}
-.main-index section div p {
-  font-size: 18px;
-  color: #ced4da;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  padding: 30px 0;
-  font-weight: bold;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
