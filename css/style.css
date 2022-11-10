@@ -96,6 +96,7 @@ section a div .section-carousel {
 }
 section a div .section-carousel:hover {
   scale: 1.05;
+  transition: all 1s;
 }
 section a div div div div .carousel-item {
   border: solid 1px #495057;
