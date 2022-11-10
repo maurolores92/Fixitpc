@@ -13,7 +13,11 @@
     .quienes-somos {
         @extend %texto-main;
         }
+        a {
+            @extend %enlaces;
+        }
     }
+    
 /*SERVICIOS*/
 .main-index {
     h1 {

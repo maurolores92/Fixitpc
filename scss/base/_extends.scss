@@ -4,11 +4,20 @@
     color: $c-general;
     font-weight: bold;
     text-align: center;
-    width: 75%;
+    font-size: 28px;
+    width: 900px;
     display: block;
     margin-top: 60px;
     margin-bottom: 20px;
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+%enlaces {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: $c-general;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 %servicio-main {

@@ -537,11 +537,21 @@ iframe {
   color: #ced4da;
   font-weight: bold;
   text-align: center;
-  width: 75%;
+  font-size: 28px;
+  width: 900px;
   display: block;
   margin-top: 60px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.main-index a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #ced4da;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-index .titulo-preguntas, .main-index h1 {
@@ -574,11 +584,21 @@ iframe {
   color: #ced4da;
   font-weight: bold;
   text-align: center;
-  width: 75%;
+  font-size: 28px;
+  width: 900px;
   display: block;
   margin-top: 60px;
   margin-bottom: 20px;
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.main-index a {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: #ced4da;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .main-index .titulo-preguntas, .main-index h1 {
@@ -608,6 +628,7 @@ iframe {
   width: 180px;
   height: 60px;
   margin-left: 40px;
+  display: flex;
 }
 .main-index nav div div ul li a {
   font-size: 16px;
