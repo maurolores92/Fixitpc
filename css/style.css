@@ -353,6 +353,7 @@ section a .carousel-servicios ul li {
 .servicios .servicios-descripcion li {
   list-style-position: inside;
   text-align: justify;
+  list-style-type: none;
 }
 .servicios .servicios-descripcion img {
   width: 430px;
