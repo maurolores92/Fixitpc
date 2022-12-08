@@ -25,6 +25,6 @@ mail($para, $asunto, utf8_decode($mensaje), $header);
 
 // redireccion al haber enviado el mail
 
-header("Location:pages/exito.html")
+header("Location:exito.html")
 
 ?>
