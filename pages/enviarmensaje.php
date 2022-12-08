@@ -1,33 +1,17 @@
 <?php
 
-// Conecto mi form / name / con el server a traves de los name
+$destino = "maurolores1992@gmail.com";
 
-$nombre = $_POST ['name'];
-$celular = $_POST ['celular']; 
+$nombre = $_POST ['nombre'];
+$celular = $_POST ['celular'];
 $email = $_POST ['email'];
-$textarea = $_POST ['mensaje'];
+$mensaje = $_POST ['mensaje'];
 
-// Vamos a mostrar un texto plano
-$header .= "Content-Type: text/plain";
+$header = "Envio desde formulario de contacto de Fix it PC";
+$mensajeCompleto = "\n Nombre: " . $nombre . "\n" . "Email: " . $email . "\n" . "Numero de telefono: " . $celular . "\n" . "Mensaje : " . $mensaje;
 
-// Como me va a llegar el cierpo del mail a mi, osea lo que la gente escribio en el form - /r/n es para hacer saltos de linea
-
-$mensaje = "Este mensaje fue enviado por:" . $nombre . ",/r/n";
-$mensaje = "Su numero de telefono es:" . $celular . ",/r/n";
-$mensaje = "Su email es:" . $email . ",/r/n";
-$mensaje = "Mensaje enviado" . $textarea . ",/r/n";
-$mensaje = "mensaje" . $_POST ["mensaje"];
-$mensaje = "Enviado el" . date ("d/m/Y", time ());
-
-// Funcion mail 
-// a quien le mando el mail 
-
-$para = 'maurolores1992@gmail.com';
-$asunto = 'Mensaje de Fix it PC';
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-// redireccion al haber enviado el mail 
+mail($destino, $mensajeCompleto, $header);
 header('Location: exito.html');
 
 ?>
+
