@@ -7,6 +7,9 @@ $celular = $_POST ["celular"];
 $email = $_POST ["email"];x
 $mensaje = $_POST ["textarea"];
 
+// Vamos a mostrar un texto plano
+$header .= "Content-Type: text/plain"
+
 // Como me va a llegar el cierpo del mail a mi, osea lo que la gente escribio en el form - /r/n es para hacer saltos de linea
 
 $mensaje = "Este mensaje fue enviado por:" . $nombre . ",/r/n";
