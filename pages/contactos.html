@@ -86,19 +86,19 @@
     <section>
         
         <div class="contenedor">
-            <form action="form.php" method="POST" class="form" id="form">
+            <form action="form.php" method="post" class="form" id="form">
                 <!-- campo para el nombre -->
                 <div class="form-header">
                     <h3 class="formTitle">Contacto</h3>
                 </div>
             
                     <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
-                    <input type="text" id="NombreApellido" class="form-input " name="name" placeholder="Mauricio Lores">  
+                    <input type="text" id="NombreApellido" class="form-input " name="name" placeholder="Escriba su nombre">  
                 <!-- campo para el telefono -->
                     <label for="telefono" class="form-label">Telefono</label>
                     <input type="tel" class="form-input" id="telefono" name="celular" placeholder="+5491126882173">
                 <!-- campo para el correo -->
-                    <label for="correoElectronico" class="form-label">Correo Electronico</label>
+                    <label for="correoElectronico" class="form-label">Correo Electronico</label>  
                     <input type="email" class="form-input" id="correoElectronico" name="email" placeholder="tunombre@tucorreo.com" required>
                 <!-- campo para el servicio -->
                 <label for="servicio" class="form-label">Servicio</label>
@@ -122,7 +122,7 @@
                 <!-- campo de suscripcion
                     <label for="newsletter">Suscribete para recibir noticias y promociones</label>
                     <input type="checkbox" id="newsletter" name="suscripcion" value="acepta"> -->
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 <!-- boton de enviar -->
             </form>
         </div>
