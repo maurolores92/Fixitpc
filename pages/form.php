@@ -21,13 +21,13 @@ $mensaje = "Enviado el" . date ("d/m/Y", time ())
 // Funcion mail 
 // a quien le mando el mail 
 
-$para = "mauriciolores1992@gmail.com";
+$para = "maurolores1992@gmail.com";
 $asunto = "Mensaje de Fix it PC"
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 // redireccion al haber enviado el mail
 
-header("Location:exito.html")
+header("Location: exito.html")
 
 ?>
