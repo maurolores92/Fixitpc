@@ -212,31 +212,26 @@
                 </article>
             </div>
                 <div class="contenedor">
-                <form action="" id="presupuesto" class="form">
-                    <div class="form-header">
-                        <h3 class="form-title">Contacto</h3>
-                    </div>
-                        <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
-                        <input type="text" id="NombreApellido" class="form-input " name="nombreApellido" placeholder="Mauricio Lores">
-                        <label for="telefono" class="form-label">Telefono</label>
-                        <input type="tel" class="form-input" id="telefono" name="telefonocelular" placeholder="+5491126882173">
-                        <label for="correoElectronico" class="form-label">Correo Electronico</label>
-                        <input type="email" class="form-input" id="correoElectronico" name="correoElectronico" placeholder="tunombre@tucorreo.com" required>
-                        <label for="servicio" class="form-label">Servicio</label>
-                        <select name="servicio" id="servicio" class="form-texarea">
-                        <option value="servicio" >Seleccione servicio</option>
-                        <option value="Instalacionwindows">Instalacion de software para Mac y Windows</option>
-                        <option value="Serviciodebackup">Servicio de Back UP</option>
-                        <option value="Mantenimientoyreparaciondehardware">Mantenimiento y reparacion de hardware</option>
-                        <option value="ActualizaciondeHardware">Actualizacion de Hardware</option>
-                        <option value="Configuraciondetrabajoremoto">Configuracion de trabajo remoto</option>
-                        <option value="Desarrolloweb">Desarrollamos tu Web</option>
-                        </select>
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea name="mensaje" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
-                        <input type="submit" value="Enviar" class="botones-form">
-                        <input type="reset" value="Borrar" class="botones-form">
-                </form>
+                    <section>
+                        <div class="contenedor">
+                            <form action="enviarmensaje.php" method="post" class="form" id="form">
+                                <div class="form-header">
+                                    <h3 class="formTitle">Contacto</h3>
+                                </div>
+                                <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
+                                <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Escriba su nombre">  
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="tel" class="form-input" id="telefono" name="celular" placeholder="+5491126882173">
+                                <label for="correoElectronico" class="form-label">Correo Electronico</label>  
+                                <input type="email" class="form-input" id="correoElectronico" name="email" placeholder="tunombre@tucorreo.com" required>
+                                <label for="servicio" class="form-label">Servicio que solicita</label>
+                                <input type="text" name="asunto" placeholder="Servicio que solicita" class="form-input">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea name="textarea" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
+                                <button type="submit" class="botones-form">Submit</button>
+                            </form>
+                        </div>
+                    </section>
             </div>
             <div class="rrss-fixed">
                 <a href="https://wa.me/584246550621" target="_blank" title="whatsapp">

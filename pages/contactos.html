@@ -84,39 +84,22 @@
         </div>
     </div>
     <section>
-        
         <div class="contenedor">
             <form action="enviarmensaje.php" method="post" class="form" id="form">
-                <!-- campo para el nombre -->
                 <div class="form-header">
                     <h3 class="formTitle">Contacto</h3>
                 </div>
-            
-                    <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Escriba su nombre">  
-                <!-- campo para el telefono -->
-                    <label for="telefono" class="form-label">Telefono</label>
-                    <input type="tel" class="form-input" id="telefono" name="celular" placeholder="+5491126882173">
-                <!-- campo para el correo -->
-                    <label for="correoElectronico" class="form-label">Correo Electronico</label>  
-                    <input type="email" class="form-input" id="correoElectronico" name="email" placeholder="tunombre@tucorreo.com" required>
-                <!-- campo para el servicio -->
+                <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
+                <input type="text" id="NombreApellido" class="form-input " name="nombre" placeholder="Escriba su nombre">  
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="tel" class="form-input" id="telefono" name="celular" placeholder="+5491126882173">
+                <label for="correoElectronico" class="form-label">Correo Electronico</label>  
+                <input type="email" class="form-input" id="correoElectronico" name="email" placeholder="tunombre@tucorreo.com" required>
                 <label for="servicio" class="form-label">Servicio que solicita</label>
                 <input type="text" name="asunto" placeholder="Servicio que solicita" class="form-input">
-                </select>
-                <!-- campo para adjuntar imagenes
-                <label for="imagen">Imagen del problema</label>
-                <input type="file" id="imagen" name="imagen">  -->
-
-                <!-- campo para dejar mensaje -->
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea name="textarea" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
-
-                <!-- campo de suscripcion
-                    <label for="newsletter">Suscribete para recibir noticias y promociones</label>
-                    <input type="checkbox" id="newsletter" name="suscripcion" value="acepta"> -->
-                    <button type="submit">Submit</button>
-                <!-- boton de enviar -->
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea name="textarea" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
+                <button type="submit" class="botones-form">Submit</button>
             </form>
         </div>
     </section>
