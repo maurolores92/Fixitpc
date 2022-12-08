@@ -4,7 +4,7 @@
 
 $nombre = $_POST ["name"];
 $celular = $_POST ["celular"]; 
-$email = $_POST ["email"];
+$email = $_POST ["email"];x
 $mensaje = $_POST ["textarea"];
 
 // Como me va a llegar el cierpo del mail a mi, osea lo que la gente escribio en el form - /r/n es para hacer saltos de linea
