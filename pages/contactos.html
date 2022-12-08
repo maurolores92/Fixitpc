@@ -86,20 +86,20 @@
     <section>
         
         <div class="contenedor">
-            <form action="" class="form" id="form">
+            <form action="../form.php" method="POST" class="form" id="form">
                 <!-- campo para el nombre -->
                 <div class="form-header">
                     <h3 class="formTitle">Contacto</h3>
                 </div>
             
                     <label for="NombreApellido" class="form-label">Nombre y Apellido</label>
-                    <input type="text" id="NombreApellido" class="form-input " name="nombreApellido" placeholder="Mauricio Lores">  
+                    <input type="text" id="NombreApellido" class="form-input " name="name" placeholder="Mauricio Lores">  
                 <!-- campo para el telefono -->
                     <label for="telefono" class="form-label">Telefono</label>
-                    <input type="tel" class="form-input" id="telefono" name="telefonocelular" placeholder="+5491126882173">
+                    <input type="tel" class="form-input" id="telefono" name="celular" placeholder="+5491126882173">
                 <!-- campo para el correo -->
                     <label for="correoElectronico" class="form-label">Correo Electronico</label>
-                    <input type="email" class="form-input" id="correoElectronico" name="correoElectronico" placeholder="tunombre@tucorreo.com" required>
+                    <input type="email" class="form-input" id="correoElectronico" name="email" placeholder="tunombre@tucorreo.com" required>
                 <!-- campo para el servicio -->
                 <label for="servicio" class="form-label">Servicio</label>
                 <select name="servicio" id="servicio" class="form-texarea">
@@ -117,15 +117,16 @@
 
                 <!-- campo para dejar mensaje -->
                     <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea name="mensaje" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
+                    <textarea name="textarea" class="form-texarea" id="mensaje" cols="30" rows="10" placeholder="Dejanos un mensaje con tu duda o problema"></textarea>
 
                 <!-- campo de suscripcion
                     <label for="newsletter">Suscribete para recibir noticias y promociones</label>
                     <input type="checkbox" id="newsletter" name="suscripcion" value="acepta"> -->
 
                 <!-- boton de enviar -->
-                    <input type="submit" value="Enviar" class="botones-form">
-                    <input type="reset" value="Borrar" class="botones-form">
+                    <div class="botones-form"> 
+                        <button>Submit</button>
+                    </div>
             </form>
         </div>
     </section>
