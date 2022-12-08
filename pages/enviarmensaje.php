@@ -9,7 +9,7 @@ $email = $_POST ['email'];
 $textarea = $_POST ['textarea'];
 
 $header = "Envio desde formulario de contacto de Fix it PC";
-$mensaje = "\n Nombre: " . $nombre . "\n" . "Email: " . $email . "\n" . "Numero de telefono: " . $celular . "\n" . "Mensaje : " . $mensaje;
+$mensaje = "Nombre: " . $nombre . ",/r/n" . "Email: " . $email . ",/r/n" . "Numero de telefono: " . $celular . ",/r/n" . "Mensaje : " . $textarea;
 
 mail($destino, $header, utf8_decode($mensaje));
 header('Location: exito.html');
