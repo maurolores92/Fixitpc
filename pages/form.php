@@ -5,7 +5,7 @@
 $nombre = $_POST ["name"];
 $celular = $_POST ["celular"]; 
 $email = $_POST ["email"];x
-$mensaje = $_POST ["textarea"];
+$textarea = $_POST ["textarea"];
 
 // Vamos a mostrar un texto plano
 $header .= "Content-Type: text/plain"
@@ -14,15 +14,16 @@ $header .= "Content-Type: text/plain"
 
 $mensaje = "Este mensaje fue enviado por:" . $nombre . ",/r/n";
 $mensaje = "Su numero de telefono es:" . $celular . ",/r/n";
-$mensaje = "Su email es:" . $email . ",/r/n;"
-$mensaje = "mensaje" . $_POST ["mensaje"]
+$mensaje = "Su email es:" . $email . ",/r/n";
+$mensaje = "Mensaje enviado" . $textarea . ",/r/n";
+$mensaje = "mensaje" . $_POST ["mensaje"];
 $mensaje = "Enviado el" . date ("d/m/Y", time ())
 
 // Funcion mail 
 // a quien le mando el mail 
 
 $para = "maurolores1992@gmail.com";
-$asunto = "Mensaje de Fix it PC"
+$asunto = "Mensaje de Fix it PC"git 
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
